@@ -12,9 +12,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'sheerun/vim-polyglot'
 " Auto pairs for '(' '[' '{'
 Plug 'jiangmiao/auto-pairs'
+Plug 'mhinz/vim-startify'
+Plug 'voldikss/vim-floaterm'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'kevinhwang91/rnvimr',
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
+Plug 'liuchengxu/vim-which-key'
 
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
