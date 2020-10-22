@@ -7,10 +7,12 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 /var/www/html/magento/src/app/code/Brainvire/Amp/registration.php
+badd +1 /var/www/html/magento/src/app/code/Brainvire/Amp/registration.php
+badd +1 /var/www/html/magento/src/index.php
+badd +26 /var/www/html/magento/src/pub/index.php
 argglobal
 %argdel
-edit /var/www/html/magento/src/app/code/Brainvire/Amp/registration.php
+edit /var/www/html/magento/src/index.php
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -45,11 +47,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 16) / 32)
+let s:l = 21 - ((10 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+21
 normal! 0
 wincmd w
 2wincmd w
