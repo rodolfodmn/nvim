@@ -28,6 +28,8 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'vim-vdebug/vdebug'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdcommenter'
+Plug 'posva/vim-vue'
 
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

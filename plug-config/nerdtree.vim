@@ -1,2 +1,2 @@
 nmap <space>e :NERDTreeToggle<CR>
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "righ"
