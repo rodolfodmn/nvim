@@ -26,6 +26,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'vim-vdebug/vdebug'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
