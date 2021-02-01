@@ -171,7 +171,7 @@ nmap <leader>nt :NERDTreeToggle<CR>
 nmap <leader>ww :VimwikiIndex<CR>
 nmap <leader>fr :%s/
 "" fzf
-nmap <leader>fa :Rg<space>
+nmap <leader>fa :Rg!<space>
 nmap <leader>p :Files<CR>
 "" dart
 map <leader>df :DartFmt<CR>

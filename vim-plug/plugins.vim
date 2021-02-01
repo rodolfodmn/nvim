@@ -11,6 +11,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Better Syntax Support
 Plug 'sheerun/vim-polyglot'
 " Auto pairs for '(' '[' '{'
+Plug 'morhetz/gruvbox'
+Plug 'sainnhe/gruvbox-material'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-startify'
 Plug 'voldikss/vim-floaterm'
@@ -30,6 +32,7 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'preservim/nerdcommenter'
 Plug 'posva/vim-vue'
+Plug 'vimwiki/vimwiki'
 
 " Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

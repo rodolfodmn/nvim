@@ -14,11 +14,12 @@ nmap <leader>xa ggVGx
 nmap <leader>fr :%s/
 map <C-f> :GFiles<CR>
 map <C-b> :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
+nnoremap <leader>g :Rg!<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
 map <C-f> <Esc><Esc>:Files!<CR>
+map <C-a> <Esc><Esc>:Ag!<CR>
 map <C-b> <Esc><Esc>:Buffers!<CR>
 inoremap <C-f> <Esc><Esc>:BLines!<CR>
 map <C-g> <Esc><Esc>:BCommits!<CR>
@@ -40,6 +41,8 @@ inoremap kj <Esc>
 " Easy CAPS
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
+
+map <leader>dd bdelete
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
@@ -69,6 +72,3 @@ nnoremap <C-j> <C-w>h
 nnoremap <C-k> <C-w>j
 nnoremap <C-l> <C-w>k
 nnoremap <C-ç> <C-w>l
-
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
