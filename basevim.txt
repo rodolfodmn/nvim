@@ -1,0 +1,71 @@
+plugins?
+Plug 'morhetz/gruvbox'
+Plug 'voldikss/vim-floaterm'
+Plug 'vim-airline/vim-airline'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdcommenter'
+Plug 'vimwiki/vimwiki'
+se tiver tempo
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+keys?
+movimentação
+noremap ç l
+noremap l k
+noremap k j
+noremap j h
+nmap <leader>j :wincmd h<CR>
+nmap <leader>k :wincmd j<CR>
+nmap <leader>l :wincmd k<CR>
+nmap <leader>ç :wincmd l<CR>
+
+nnoremap <M-k>    :resize -2<CR>
+nnoremap <M-l>    :resize +2<CR>
+nnoremap <M-j>    :vertical resize -2<CR>
+nnoremap <M-ç>    :vertical resize +2<CR>
+" Better window navigation
+nnoremap <C-j> <C-w>h
+nnoremap <C-k> <C-w>j
+nnoremap <C-l> <C-w>k
+nnoremap <C-ç> <C-w>l
+
+" TAB in general mode will move to text buffer
+nnoremap <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+nnoremap <S-TAB> :bprevious<CR>
+" Better tabbing
+vnoremap < <gv
+vnoremap > >gv
+
+nmap <space>e :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "righ"
+
+fzf
+nnoremap <leader>g :Rg!<CR>
+map <C-f> <Esc><Esc>:Files!<CR>
+inoremap <C-f> <Esc><Esc>:BLines!<CR>
+" Use alt + hjkl to resize windows
+
+sets?
+colorscheme gruvbox
+set background=dark
+
+let g:mapleader = "\<Space>"
+syntax enable                           " Enables syntax highlighing
+set tabstop=4                           " Insert 4 spaces for a tab
+set shiftwidth=4                        " Change the number of space characters inserted for indentation
+set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+set expandtab                           " Converts tabs to spaces
+set smartindent                         " Makes indenting smart
+set autoindent                          " Good auto indent
+set laststatus=0                        " Always display the status line
+set relativenumber
+set number
+set hidden                              " Required to keep multiple buffers open multiple buffers
+set nowrap                              " Display long lines as just one line
+set encoding=utf-8                      " The encoding displayed
+set formatoptions-=cro                  " Stop newline continution of comments
+set clipboard=unnamedplus               " Copy paste between vim and everything else
