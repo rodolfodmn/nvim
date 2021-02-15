@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'sheerun/vim-polyglot'
 " Auto pairs for '(' '[' '{'
 Plug 'morhetz/gruvbox'
+Plug 'Yggdroot/indentLine'
 Plug 'sainnhe/gruvbox-material'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-startify'
