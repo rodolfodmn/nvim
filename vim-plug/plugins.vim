@@ -8,6 +8,16 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+Plug 'dense-analysis/ale'
+Plug 'Yggdroot/indentLine'
+"" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+"" HTML Bundle
+Plug 'hail2u/vim-css3-syntax'
+Plug 'gko/vim-coloresque'
+Plug 'tpope/vim-haml'
+Plug 'mattn/emmet-vim'
 " Better Syntax Support
 Plug 'sheerun/vim-polyglot'
 " Auto pairs for '(' '[' '{'

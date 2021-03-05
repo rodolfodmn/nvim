@@ -27,6 +27,8 @@ set relativenumber
 set number
 set cursorline                          " Enable highlighting of the current line
 
+let g:ale_linters = {}
+
 " sreen
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
@@ -39,3 +41,4 @@ set shiftwidth=4                        " Change the number of space characters 
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
+

@@ -9,6 +9,8 @@ nmap <leader>k :wincmd j<CR>
 nmap <leader>l :wincmd k<CR>
 nmap <leader>ç :wincmd l<CR>
 
+nnoremap <silent> <leader><space> :noh<cr>
+
 " Better window navigation
 nnoremap <C-j> <C-w>h
 nnoremap <C-k> <C-w>j
@@ -64,13 +66,28 @@ inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
 
 " Alternate way to save
-nnoremap <C-s> :w<CR>
+nnoremap <leader>w :w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
+inoremap qq <Esc>:w<CR>
 
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
 
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
+
+"" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
