@@ -9,7 +9,7 @@ nmap <leader>k :wincmd j<CR>
 nmap <leader>l :wincmd k<CR>
 nmap <leader>ç :wincmd l<CR>
 
-nnoremap <silent> <leader><space> :noh<cr>
+nnoremap <silent> <leader>c :noh<cr>
 
 " Better window navigation
 nnoremap <C-j> <C-w>h
@@ -24,7 +24,7 @@ nnoremap <S-TAB> :bprevious<CR>
 
 " SCREEN
 " ident
-nmap <leader>id G=gg<CR>
+nmap <leader>id magg=G`a<CR>
 
 " Use alt + hjkl to resize windows
 nnoremap <M-k>    :resize -2<CR>
@@ -63,7 +63,11 @@ inoremap kj <Esc>
 
 " Easy CAPS - all word
 inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwU<Esc>
+nnoremap tu viwU<Esc>
+
+" Ponto virgula
+inoremap ;; <esc> A;<esc>
+nnoremap ;; <esc> A;<esc>
 
 " Alternate way to save
 nnoremap <leader>w :w<CR>
@@ -71,8 +75,8 @@ nnoremap <leader>w :w<CR>
 nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
-inoremap qq <Esc>:w<CR>
-
+nnoremap <silent> <leader><space> <Esc>:w<cr>
+inoremap <silent> <leader><space> <Esc>:w<cr>
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
@@ -87,7 +91,6 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
-
 "" Move visual block
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv

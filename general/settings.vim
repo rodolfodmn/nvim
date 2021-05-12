@@ -1,4 +1,5 @@
 " configs
+set guifont = Mono:h15
 let g:mapleader = "\<Space>"
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers

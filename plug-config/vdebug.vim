@@ -8,7 +8,7 @@ let g:vdebug_keymap = {
 \    "step_into" : "<Left>",
 \    "step_out" : "<Right>",
 \    "close" : "q",
-\    "detach" : "x",
+\    "detach" : "x"
 \    "set_breakpoint" : "<Leader>p",
 \    "eval_visual" : "<Leader>v"
 \}
