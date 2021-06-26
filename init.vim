@@ -7,7 +7,6 @@ source $HOME/.config/nvim/keys/snippets.vim
 source $HOME/.config/nvim/plug-config/html.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
-source $HOME/.config/nvim/plug-config/which-key.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/vdebug.vim
